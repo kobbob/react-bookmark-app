@@ -1,0 +1,57 @@
+/* BUTTONS */ 
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  appearance: none;
+}
+// button::-moz-focus-inner {
+//   border: 10px;
+// }
+.btn {
+  padding: 0.8rem 1rem 0.7rem;
+  border: 0.1rem solid #4d4d4d;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.btn.toggle-btn {
+  border-width: 1px;
+  border-color: #d3d3d3;
+}
+.btn.toggle-btn[aria-pressed="true"] {
+  text-decoration: underline;
+  border-color: #4d4d4d;
+}
+.btn__danger {
+  color: #fff;
+  background-image: url(../../assets/images/delete-icon.png);
+  background-repeat: no-repeat;
+  border-color: #bd2130;
+}
+.btn__filter {
+  border-color: lightgrey;
+}
+.btn__primary {
+  color: #fff;
+  background-color: #4d4d4d;
+  margin-top: 1rem;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-group > * {
+  flex: 1 1 49%;
+}
+.btn-group > * + * {
+  margin-left: 0.8rem;
+}

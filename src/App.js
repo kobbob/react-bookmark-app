@@ -1,4 +1,3 @@
-import './App.css';
 
 function App(props) {
   return (
@@ -17,7 +16,7 @@ function App(props) {
         <form className="form-wrapper">
           <h2 className="label-wrapper">
             <label htmlFor="new-bookmark-input" className="label__lg">
-              BOOKMARK NAME:
+              Bookmark Name:
             </label>
           </h2>
           <input
@@ -29,7 +28,7 @@ function App(props) {
           />
           <h2 className="label-wrapper">
             <label htmlFor="new-bookmark-input" className="label__lg">
-              PASTE LINK:
+              Paste Link:
             </label>
           </h2>
           <input
@@ -101,11 +100,11 @@ function App(props) {
           </ul>
         </div> */}
 
-        <div className="List-wrapper">
-            <div className="List_Container">
-              <div className="ListItem_Container">data</div>
-              <div className="ListItem_Container">data</div>
-              <div className="ListItem_Container">data</div>
+        <div className="list-wrapper">
+            <div className="list_container">
+              <div className="list_item_container">data</div>
+              <div className="list_item_container">data</div>
+              <div className="list_item_container">data</div>
             </div>
           </div>
 

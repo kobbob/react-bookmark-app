@@ -1,0 +1,28 @@
+/* LIST VIEW */ 
+
+/* bookmark item styles -- to be reviewed again */
+.bookmark {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.bookmark > * {
+  flex: 0 0 100%;
+}
+.bookmark-text {
+  width: 100%;
+  min-height: 4.4rem;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid #bc5151;
+}
+.bookmark-text:focus {
+  box-shadow: inset 0 0 0 2px;
+}
+
+.list_item_container {
+  border: 1px solid black;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  margin-top: 2rem;
+
+}

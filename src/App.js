@@ -1,49 +1,25 @@
 
+// Import Components
+import BookmarkList from './components/BookmarkList';
+import Form from './components/Form';
+
+
 function App(props) {
   return (
-  <>
-    <header className="header-wrapper">
-      <div className="navigation">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Blue_globe_icon.svg" alt="logo"/>
-      </div>
-    </header>  
-    
-    <main>
-      <div className="bookmarkapp stack-large">
+    <>
+      <header className="header-wrapper">
+        <div className="navigation">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Blue_globe_icon.svg" alt="logo" />
+        </div>
+      </header>
 
-        <h1 className="title-wrapper">kobs.world</h1>
+      <main>
+        <div className="bookmarkapp stack-large">
+          <h1 className="title-wrapper">kobs.world</h1>
+          <Form />
+          <BookmarkList />
 
-        <form className="form-wrapper">
-          <h2 className="label-wrapper">
-            <label htmlFor="new-bookmark-input" className="label__lg">
-              Bookmark Name:
-            </label>
-          </h2>
-          <input
-            type="text"
-            id="new-bookmark-input"
-            className="input input__lg"
-            name="text"
-            autoComplete="off"
-          />
-          <h2 className="label-wrapper">
-            <label htmlFor="new-bookmark-input" className="label__lg">
-              Paste Link:
-            </label>
-          </h2>
-          <input
-            type="text"
-            id="new-bookmark-input"
-            className="input input__lg"
-            name="text"
-            autoComplete="off"
-          />
-          <button type="submit" className="btn btn__primary btn__lg">
-            SUBMIT
-          </button>
-        </form>
-
-        {/* <div className="list-wrapper">
+          {/* <div className="list-wrapper">
           <h2 id="list-heading">Saved Bookmarks</h2>
           <ul
             role="list"
@@ -100,18 +76,10 @@ function App(props) {
           </ul>
         </div> */}
 
-        <div className="list-wrapper">
-            <div className="list_container">
-              <div className="list_item_container">data</div>
-              <div className="list_item_container">data</div>
-              <div className="list_item_container">data</div>
-            </div>
-          </div>
 
-      </div>
-
-    </main>  
-  </>
+        </div>
+      </main>
+    </>
   );
 }
 

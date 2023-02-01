@@ -2,35 +2,34 @@ import React from "react";
 
 function Form(props) {
   return (
-    <form className="form-wrapper">
-      <h2 className="label-wrapper">
-        <label htmlFor="new-bookmark-input" className="label__lg">
-          Bookmark Name:
-        </label>
-      </h2>
-      <input
-        type="text"
-        id="new-bookmark-input"
-        className="input input__lg"
-        name="text"
-        autoComplete="off"
-      />
-      <h2 className="label-wrapper">
-        <label htmlFor="new-bookmark-input" className="label__lg">
-          Paste Link:
-        </label>
-      </h2>
-      <input
-        type="text"
-        id="new-bookmark-input"
-        className="input input__lg"
-        name="text"
-        autoComplete="off"
-      />
-      <button type="submit" className="btn btn__primary btn__lg">
-        SUBMIT
-      </button>
-    </form>
+
+  <form className="bookmarkForm">
+    <h2>Bookmark Your Favourite Sites</h2>
+      <div className="form-group">
+        <label htmlFor="new-bookmark-input" className="label__lg">Site Name</label>
+        <input 
+          type="text"   
+          id="new-bookmark-input"
+          className="input input__lg"
+          name="text" 
+          autoComplete="off"
+          placeholder="Add a memorable bookmark name..."
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="siteURL" className="label__lg">Site URL</label>
+        <input 
+          type="text" 
+          id="new-bookmark-input"
+          className="input input__lg"
+          name="text" 
+          autoComplete="off"
+          placeholder="Insert bookmark url here..."
+        />
+      </div>
+      <button type="submit" className="btn__primary btn__lg">Submit</button>
+  </form>
+
 
   );
 }

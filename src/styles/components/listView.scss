@@ -4,10 +4,12 @@
 .bookmark {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-}
-.bookmark > * {
-  flex: 0 0 100%;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $box-color;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  margin-top: 2rem;
 }
 .bookmark-text {
   width: 100%;
@@ -19,10 +21,6 @@
   box-shadow: inset 0 0 0 2px;
 }
 
-.list_item_container {
-  border: 1px solid black;
-  border-radius: 0.4rem;
-  padding: 0.8rem;
-  margin-top: 2rem;
-
+.bookmark-data {
+  font-size: 1.5rem;
 }

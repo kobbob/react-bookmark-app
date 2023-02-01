@@ -22,20 +22,25 @@ button {
   border: 0.1rem solid $box-color;
   cursor: pointer;
   text-transform: capitalize;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.2rem;
+  toggle-btn {
+    border-width: 1px;
+    border-color: $box-color;
+  }
+  toggle-btn[aria-pressed="true"] {
+    text-decoration: underline;
+    border-color: $box-color;
+  }
 }
-.btn.toggle-btn {
-  border-width: 1px;
-  border-color: $box-color;
+.btn__edit {
+  background-image: url(../../assets/images/edit-icon.png);
 }
-.btn.toggle-btn[aria-pressed="true"] {
-  text-decoration: underline;
-  border-color: $box-color;
-}
-.btn__danger {
+.btn__delete {
   color: #fff;
   background-image: url(../../assets/images/delete-icon.png);
-  background-repeat: no-repeat;
-  border-color: #bd2130;
 }
 .btn__filter {
   border-color: lightgrey;
@@ -47,7 +52,7 @@ button {
   padding: 0.7rem;
   font-size: 1.3rem;
   text-transform: uppercase;
-  
+  cursor: pointer;
 }
 .btn-group {
   display: flex;

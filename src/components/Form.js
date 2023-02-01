@@ -3,10 +3,10 @@ import React from "react";
 function Form(props) {
   return (
 
-  <form className="bookmarkForm">
+  <form className="bookmark-form">
     <h2>Bookmark Your Favourite Sites</h2>
       <div className="form-group">
-        <label htmlFor="new-bookmark-input" className="label__lg">Site Name</label>
+        <label htmlFor="new-bookmark-input" className="label__lg">Bookmark</label>
         <input 
           type="text"   
           id="new-bookmark-input"

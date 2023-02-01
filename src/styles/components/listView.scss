@@ -24,3 +24,55 @@
 .bookmark-data {
   font-size: 1.5rem;
 }
+
+
+
+
+.list-container {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid red;
+}
+
+.left-container {
+  // flex: 0 1 50%;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  // max-width: 100rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.half-containers {
+  flex: 0 0 150%;
+  // max-height: 70%;
+  // min-height: 30%;
+  // max-width: 100%;
+  background: #0BDA51;
+  border: 1px solid red;
+  padding: .5em;
+  overflow: hidden;
+}
+.top-left-container {
+  font-size: 1.2rem;
+  text-align: start;
+  flex: 0 0 150%;
+  // border: 1px solid red;
+  // background: #0BDA51;
+  padding: .5rem;
+}
+.bottom-left-container {
+  font-size: 1rem;
+  flex: 0 0 150%;
+  // border: 1px solid red;
+  // background: #0BDA51;
+  padding: .5em;
+}
+.right-container {
+  flex: 0 1 50%;
+  min-height: 100%;
+  max-width: 10rem;
+  // border: 1px solid red;
+  // background: #0BDA51;
+  padding: .5em;
+}

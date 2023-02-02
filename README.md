@@ -4,7 +4,7 @@
 
 ## ⦿ App Brief
 * Develop a JavaScript web app that stores a list of bookmarks (links). 
-* Use front-end technologies only (HTML, CSS, JavaScript or React) (see [Limitations](#limitations) below for how the app could be improved). 
+* Use front-end technologies only (HTML, CSS, JavaScript or React). 
 * Practice Web CRUD (create, read, update, delete) and using localStorage to maintain data on browser refresh. 
 
 

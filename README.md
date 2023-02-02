@@ -13,7 +13,7 @@
 Follow this [link](https://www.notion.so/bookmark-world-TDD-6f9610426a3e440d879ea07f3306d9cd "Notion Document") to see the Technical Design Document (TDD) created for this project.
 
 
-## ⦿ Still to-do...
+### Still to-do...
 
 ### Function:
 * Form Validation for URL input.

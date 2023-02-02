@@ -1,7 +1,7 @@
 // APP COMPONENET
 // - Where all the components are rendered and CRUD operation is actioned. 
 // - useState hook is used so that any new bookmarks are added to the bookmarks state array. 
-// - useEffect hook is used to load app data from localStorage (and avoid losing data on browser refresh)
+// - useEffect hook is used to load app data from localStorage (and avoid losing data on browser refresh).
 // - Functions: 
 // (1) addBookmarks -> get data using the bookmark argument; set the bookmark state to the form data (and create a unique ID using uuid library); creates a newBookmark object with this id and spreads the bookmark argument; bookmark state mapped through and setBookmark function adds the newBookmark to the end of the array; displayed after a sweetalert2 library alert.
 // (2) deleteBookmark -> in the Bookmark component, this function will be passed down through the onDelete props, originally passed from App > Bookmarks > Bookmark. delete & edit items by id. 
@@ -18,7 +18,6 @@ import { v4 as uuidv4 } from 'uuid';
 import Swal from "sweetalert2";
 
 
-
 function App() {
   // STATES:
   const [loading, setloading] = useState(true);
@@ -29,8 +28,10 @@ function App() {
       setloading(false);
     }, 3500);
   }, [])
+
+
   // FUNCTIONS: 
-  // Fetching from Local Storage
+  // Fetching data from Local Storage
   const getBookmarks = JSON.parse(localStorage.getItem("bookmarkAdded"));
   useEffect(() => {
     if (getBookmarks == null) {
@@ -38,6 +39,7 @@ function App() {
     } else {
       setBookmarks(getBookmarks);
     }
+    // eslint-disable-next-line 
   }, [])
 
 
@@ -48,8 +50,8 @@ function App() {
     setBookmarks([...bookmarks, newBookmark]);
     Swal.fire({
       icon: 'success',
-      title: 'Yay...',
-      text: 'You have successfully added a new task!'
+      title: 'Success!',
+      text: 'You have added a new bookmark!'
     })
     localStorage.setItem("bookmarkAdded", JSON.stringify([...bookmarks, newBookmark]));
   }
@@ -59,14 +61,29 @@ function App() {
     const deleteBookmark = bookmarks.filter((bookmark) => bookmark.id !== id);
     setBookmarks(deleteBookmark);
     Swal.fire({
-      icon: 'success',
-      title: 'Oops...',
-      text: 'You have successfully deleted a task!'
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      }
     })
     localStorage.setItem("bookmarkAdded", JSON.stringify(deleteBookmark));
   }
 
-  // Edit Bookmark
+
+
+
+  // Edit Bookmark - NEED TO WORK ON THIS AS WOULD RATHER EDIT BOOKMARK IN SIMILAR FORMAT TO SWEETALERT, RATHER THAN WINDOW PROMPT.
   const editBookmark = (id) => {
     const name = prompt("Bookmark Name");
     const url = prompt("Site URL");
@@ -85,7 +102,7 @@ function App() {
     Swal.fire({
       icon: 'success',
       title: 'Success!',
-      text: 'Your bookmark has been added!'
+      text: 'Your bookmark has been updated!'
     })
     localStorage.setItem("bookmarkAdded", JSON.stringify(myData));
     window.location.reload();
@@ -122,7 +139,7 @@ function App() {
                   {
                     bookmarks.length > 0 ?
                       (<Bookmarks bookmarks={bookmarks} onDelete={deleteBookmark} onEdit={editBookmark} />) :
-                      ('No bookmarks found - start saving now!')
+                      ('0 bookmarks saved.')
                   }
                 </div>
               </div>

@@ -42,9 +42,11 @@ const AddBookmark = ({ onSave }) => {
             title: 'Hold Up...',
             text: 'Make sure you save your Bookmark URL!'
         })
+      // else if (name && url --- enter function for when URL doesn't meet criteria)  
     } else {
         onSave({ name, url });
     }
+    // once saved, clear the form and set states back to an empty string
     setName('');
     setUrl('');
   }
@@ -75,7 +77,7 @@ const AddBookmark = ({ onSave }) => {
             name="text" 
             autoComplete="off"
             placeholder="https://example.com"
-            pattern="https://.*"
+            // pattern="`/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`"
             value={url} onChange={(e) => setUrl(e.target.value)}
           />
         </div>

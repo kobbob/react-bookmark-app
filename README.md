@@ -11,3 +11,18 @@
 ## ⦿ Planning
 
 Follow this [link](https://www.notion.so/bookmark-world-TDD-6f9610426a3e440d879ea07f3306d9cd "Notion Document") to see the Technical Design Document (TDD) created for this project.
+
+
+## ⦿ Still to-do...
+
+### Function:
+* Form Validation for URL input.
+* Pagination display & function. 
+* Check box & all clear function. 
+* Edit form - different method to window prompts that has better UI & works. 
+* Bonus features & functions.  
+
+### & Design: 
+* Web scraping for bookmark cards. 
+* Update design to match design intent (see TDD). 
+* Sort inconsistent theme with alert modal (sweetalert). Explore different libraries or create your own.   

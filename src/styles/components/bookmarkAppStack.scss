@@ -10,6 +10,7 @@ main { // below properties are centering the main content/stack within the middl
   align-items: center;
 }
 
+
 /* stack properties */
 [class*="stack"] > * {
   margin-top: 0;
@@ -41,8 +42,9 @@ main { // below properties are centering the main content/stack within the middl
 /* BOOKMARK APP STACK (WHERE MAJORITY OF CONTENT IS VIEWED) */
 .bookmarkapp {
   background: #fff;
-  width: 68rem;
+  width: 50rem;
   padding: 1rem;
+  padding-top: 3rem;
   position: relative;
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2.5rem 5rem 0 rgba(0, 0, 0, 0.1); */
   @media screen and (min-width: 550px) {

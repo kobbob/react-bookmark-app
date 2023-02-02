@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react-bookmark-app/static/css/main.cd704a2d.css",
+    "main.js": "/react-bookmark-app/static/js/main.3a562e54.js",
+    "static/media/Fontspring-DEMO-tt_ramillas_extralight.otf": "/react-bookmark-app/static/media/Fontspring-DEMO-tt_ramillas_extralight.c212e9bd5dfd31535752.otf",
+    "static/media/Fontspring-DEMO-tt_ramillas_light.otf": "/react-bookmark-app/static/media/Fontspring-DEMO-tt_ramillas_light.5551ca1bbec0ba1fde2d.otf",
+    "static/media/Fontspring-DEMO-tt_ramillas_regular.otf": "/react-bookmark-app/static/media/Fontspring-DEMO-tt_ramillas_regular.a0e209029bdfcdcc9a03.otf",
+    "static/media/GT-America-Standard-Light-Trial.woff2": "/react-bookmark-app/static/media/GT-America-Standard-Light-Trial.a52f2a30da02ed7b07f9.woff2",
+    "static/media/GT-America-Standard-Regular-Trial.woff2": "/react-bookmark-app/static/media/GT-America-Standard-Regular-Trial.d9aef3f5021908615c29.woff2",
+    "index.html": "/react-bookmark-app/index.html",
+    "main.cd704a2d.css.map": "/react-bookmark-app/static/css/main.cd704a2d.css.map",
+    "main.3a562e54.js.map": "/react-bookmark-app/static/js/main.3a562e54.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd704a2d.css",
+    "static/js/main.3a562e54.js"
+  ]
+}

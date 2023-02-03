@@ -12,6 +12,7 @@
 
 Follow this [link](https://www.notion.so/bookmark-world-TDD-6f9610426a3e440d879ea07f3306d9cd "Notion Document") to see the Technical Design Document (TDD) created for this project.
 
+Current deployment for WIP project: [Link](https://kobbob.github.io/react-bookmark-app/)
 
 ### Still to-do...
 
